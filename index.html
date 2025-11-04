@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Event Tracker</h1>
+            <a class="nav-link" href="participants.html">View Participants</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2 class="page-title">Event Registration Form</h2>
+
+        <!-- Registration Form -->
+        <form id="registrationForm" class="form-card">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="organization">Organization</label>
+                    <input type="text" id="organization">
+                </div>
+
+                <div class="form-group">
+                    <label for="session">Session</label>
+                    <select id="session">
+                        <option value="">Select Session</option>
+                        <option value="Morning">Morning 9:30-12:00</option>
+                        <option value="Afternoon">Afternoon 1:00-3:30</option>
+                        <option value="Evening">Evening 4:00-6:30</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-primary">Register</button>
+        </form>
+
+        <!-- Summary Cards -->
+        <section id="summary" class="summary-grid">
+            <div class="summary-card">
+                <h3>Total Participants</h3>
+                <p id="totalCount" class="count total">0</p>
+            </div>
+            <div class="summary-card">
+                <h3>Present</h3>
+                <p id="presentCount" class="count present">0</p>
+            </div>
+            <div class="summary-card">
+                <h3>Absent</h3>
+                <p id="absentCount" class="count absent">0</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS File -->
+    <script src="script.js"></script>
+</body>
+</html>

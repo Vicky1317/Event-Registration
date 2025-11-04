@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participants List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Event Tracker</h1>
+            <a class="nav-link" href="index.html">Back to Registration</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2 class="page-title">Participants & Attendance</h2>
+
+        <!-- Table Section -->
+        <div class="table-container">
+            <table id="participantsTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Organization</th>
+                        <th>Session</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows added to JS -->
+                </tbody>
+            </table>
+        </div>
+        <button id="exportBtn" class="btn export-btn">Export Attendance (CSV)</button>
+
+    </main>
+
+    <!-- JS File -->
+    <script src="participants.js"></script>
+</body>
+
+</html>
